@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Convertidor de Moneda</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <img src="imagenes/LOGO.png" alt="Icono de Moneda"
+            class="icono-moneda">
+        <h1>Convertidor de Moneda</h1>
+    </header>
+<br><br><br>
+    <div class="container">
+        <div class="input-group">
+            <label for="amount">Cantidad:</label>
+            <input type="number" id="amount">
+        </div>
+        <div class="input-group">
+            <label for="currency">Moneda:</label>
+            <select id="currency">
+                <option value="USD">USD - Dólares</option>
+                <option value="EUR">EU - Euros</option>
+                <option value="BRL">BR - Reales Brasileños</option>
+            </select>
+        </div>
+        <button onclick="convertCurrency()">Convertir</button>
+        <div id="result"></div>
+    </div>
+
+    <script src="script.js"></script>
+
+
+
+</body>
+
+</html>
